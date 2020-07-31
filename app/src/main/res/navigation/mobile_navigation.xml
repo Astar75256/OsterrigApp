@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splashScreenFragment">
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.astar.osterrigapp.ui.splash.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_homeViewPagerFragment"
+            app:destination="@id/homeViewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeViewPagerFragment"
+        android:name="com.astar.osterrigapp.ui.onboarding.HomeViewPagerFragment"
+        android:label="fragment_home_view_pager"
+        tools:layout="@layout/fragment_home_view_pager" />
+</navigation>
